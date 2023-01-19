@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M3 - ABP AE1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <style>
+    #figuras {
+      list-style: none;
+    }
+
+    
+    .arriba {
+      transform: scale(1.2);
+    }
+
+    .abajo {
+      transform: scale(0.8);
+    }
+    .borde{
+      border: 1px solid red;
+    }
+    .img{
+        height: 20rem;
+    width: 100%;
+}
+  </style>
+</head>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <div class="text-center">
+    <map name="mapa" class="figuras">
+      <area onmouseover="showInfo(1)"shape="circle" coords="40,100,15" href="prueba.html"  />
+      <area onmouseover="showInfo(2)"shape="circle" coords="90,100,15" href="" />
+      <area onmouseover="showInfo(3)"shape="rectangle" coords="150,50,230,130" href="" />
+      <area onmouseover="showInfo(4)"shape="rectangle" coords="270,50,390,150" href="" />
+      <area onmouseover="showInfo(5)"shape="rectangle" coords="400,100,490,160" href="" />
+      <area onmouseover="showInfo(6)"shape="circle" coords="510,140,20" href="" />
+      <area onmouseover="showInfo(7)"shape="circle" coords="550,130,20" href="" />
+      <area onmouseover="showInfo(8)"shape="circle" coords="580,140,20" href="" />
+      <area onmouseover="showInfo(9)"shape="circle" coords="620,160,20" href="" />
+      <area onmouseover="showInfo(10)"shape="circle" coords="660,170,15" href="" />
+      <area onmouseover="showInfo(11)"shape="circle" coords="695,170,15" href="" />
+      <area onmouseover="showInfo(12)"shape="circle" coords="750,180,30" href="" />
+      <area onmouseover="showInfo(13)"shape="circle" coords="800,190,15" href="" />
+      <area onmouseover="showInfo(14)"shape="rectangle" coords="825,175,925,215" href="" />
+      <area onmouseover="showInfo(15)"shape="rectangle" coords="950,175,1155,255" href="" />
+      <area onmouseover="showInfo(16)"shape="rectangle" coords="1180,125,1450,255" href="" />
+    </map>
+    </map>
+    <img src="https://aprotur.cl/wp-content/uploads/2020/07/sur.png"  usemap="#mapa" >
+    
+  </div>
+
+
+
+  <div class="container text-center">
+
+    <div class="card mt-5">
+      <img id="imgVacio" src="" class="img card-img-top shadow" alt="...">
+      <div>
+      <p>Ingrese una URL para modificar la imagen</p>
+    <input id="cambioImg" type="text" placeholder="Ingrese URL">
+    </div>
+      <div class="card-body ">
+        <h5  class="titulo card-title">Región:</h5>
+        <p>modifica el nombre de la region</p>
+        <input s id="cambioTitulo" type="text" placeholder="cambia el nombre">
+        </div>
+        <div>
+        <h5 class="atractivo card-text" id="atractivos">Atractivos: </h5>
+        <p>modifica los atractivos</p>
+        <input id="cambioAtractivo"  type="text" placeholder="cambia el atractivo">
+      </div>
+    </div>
+    <button id="editar" onclick="enviar()" >Editar</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+    <footer>
+        <p>aa</p>
+    </footer>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
+<script src="js/script.js"></script>
+</html>
